@@ -1,0 +1,19 @@
+@font-face{
+    font-family:Righteous;
+    src: url(../fonts/Righteous/Righteous-Regular.ttf);
+}
+
+@font-face{
+    font-family:Kufam;
+    src: url(../fonts/Kufam/Kufam-Italic-VariableFont_wght.ttf);
+}
+
+@font-face{
+    font-family: Lato-bold;
+    src: url(../fonts/Lato/Lato-Bold.ttf);
+}
+
+@font-face{
+    font-family:lato-light;
+    src: url(../fonts/Lato/Lato-Light.ttf);
+}
