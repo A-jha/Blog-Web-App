@@ -1,6 +1,5 @@
 ## Blogging-Website-Project
-Simple Blogging website made using HTML CSS and JavaScript 
-This project was made during my learning period and i like it 
+Simple Blogging website made using HTML CSS and JavaScript .
 ## Tools used
 ### <ul>
   <li>Font Awesome For icons</li>
