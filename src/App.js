@@ -10,7 +10,7 @@ function App() {
       <div className="App">
         <Navbar />
         <div className="content">
-          <switch>
+          <Switch>
             <Route exact path="/">
               <Home />
             </Route>
@@ -20,7 +20,7 @@ function App() {
             <Route path="/blogs/:id">
               <BlogDetails />
             </Route>
-          </switch>
+          </Switch>
         </div>
       </div>
     </Router>

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom/cjs/react-router-dom";
+import { blogs } from "./data/db";
 
 const Create = () => {
     const [title, setTitle] = useState('');
@@ -10,22 +11,9 @@ const Create = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const blog = { title, body, author};
-
-        setIsPending(true);
-
-        fetch('http://localhost:8000/blogs', {
-            method: 'POST',
-            headers:{"Content-Type": "application/json"},
-            body:JSON.stringify(blog)
-        }).then(()=>{
-            console.log('new blog added');
-            setIsPending(false);
-            // history.go(-1);
-            history.push('/');
-        })
-
-       
+        const blog = { title, body, author, id:blogs.length+1};
+        blogs.push(blog);
+        history.push('/');
     }
 
     return (
